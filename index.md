@@ -13,7 +13,7 @@ It is a condensed version of what can be found on:
 
 The goal is to persist data in a relational database without writing a single line of java code.
 * Currently the example just covers: `` kafka topic (avro) -> jdbc ``
-* In the future the example should be: `` kafka topic (xml) -> kafka topic (avro) -> jdbc `` including an example with a dead letter queue.
+* In the future the example should be: `` kafka topic (xml) -> kafka topic (avro) -> jdbc `` (including an example with a dead letter queue).
 
 ## docker
 Fire up all needed services [zookeeper, broker, schema-registry, kafka-connect, ksqldb-server, kqsql-cli, postgres, pgadmin]
