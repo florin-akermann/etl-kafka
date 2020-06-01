@@ -11,7 +11,7 @@ It is a condensed version of what can be found on:
 * https://blog.softwaremill.com/do-not-reinvent-the-wheel-use-kafka-connect-4bcabb143292
 * https://www.confluent.io/blog/kafka-connect-deep-dive-error-handling-dead-letter-queues/
 
-The goal is to persist data via jdbc without writing a single line of java code.
+The goal is to persist data via JDBC without writing a single line of java code.
 * Currently the example just covers: `` kafka topic (avro) -> jdbc ``
 * In the future the example should be: `` kafka topic (xml) -> kafka topic (avro) -> jdbc `` (including an example with a dead letter queue).
 
@@ -62,7 +62,8 @@ select * from test;
 #### Considerations:
 
 * What if messages cannot be persisted due to some invalid property of the entity? <br>[Send it of to a error / dead letter queue](https://www.confluent.io/blog/kafka-connect-deep-dive-error-handling-dead-letter-queues/)
-
+* Performance?
+* At-least-once-delivery?
 
 #### Pros & Cons of using Kafka-Connect:
 
