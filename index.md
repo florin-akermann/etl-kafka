@@ -18,7 +18,7 @@ The goal is to persist data in a relational database without writing a single li
 ## docker
 Fire up all needed services [zookeeper, broker, schema-registry, kafka-connect, ksqldb-server, kqsql-cli, postgres, pgadmin]
 
-```
+````
 docker-compose up
 ````
 
