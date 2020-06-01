@@ -10,6 +10,7 @@ It is a condensed version of what can be found on:
 * https://www.confluent.io/blog/build-streaming-etl-solutions-with-kafka-and-rail-data/
 * https://blog.softwaremill.com/do-not-reinvent-the-wheel-use-kafka-connect-4bcabb143292
 * https://www.confluent.io/blog/kafka-connect-deep-dive-error-handling-dead-letter-queues/
+* https://www.confluent.io/hub/jcustenborder/kafka-connect-transform-xml
 
 The goal is to persist data via JDBC without writing a single line of java code.
 * Currently the example just covers: `` kafka topic (avro) -> jdbc ``
