@@ -18,13 +18,17 @@ The goal is to persist data in a relational database without writing a single li
 ## docker
 Fire up all needed services [zookeeper, broker, schema-registry, kafka-connect, ksqldb-server, kqsql-cli, postgres, pgadmin]
 
-`docker-compose up`
+```
+docker-compose up
+````
 
 ## ksql-cli
 Let's create a topic and add some data via ksql.
 Fire up the ksql-cli by calling:
 
-``docker exec -it ksqldb-cli ksql http://ksqldb-server:8088``
+````
+docker exec -it ksqldb-cli ksql http://ksqldb-server:8088
+````
 
 Create stream with and the underlying test topic
 
@@ -47,11 +51,13 @@ select * from test emit changes;
 Spawn Jdbc sink by running ``kafka-connect-jdbc-sink.sh``
 
 ## postgresql
-logon ``localhost:18080`` username: postgres@example.com pw: postgres
-and connect to ``postgres:5432`` username: postgres: pw: postgres
+Goto ``localhost:18080`` with: ``username: postgres@example.com pw: postgres`` <br>
+and connect to ``postgres:5432`` with: ``username: postgres pw: postgres``
 
 verify that your data has reached postgres by querying something long the lines:
-``select * from test;``
+````
+select * from test;
+````
 
 #### Considerations:
 
