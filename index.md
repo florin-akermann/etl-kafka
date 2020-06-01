@@ -11,7 +11,7 @@ It is a condensed version of what can be found on:
 * https://blog.softwaremill.com/do-not-reinvent-the-wheel-use-kafka-connect-4bcabb143292
 * https://www.confluent.io/blog/kafka-connect-deep-dive-error-handling-dead-letter-queues/
 
-The goal is to persist data in a relational database without writing a single line of java code.
+The goal is to persist data via jdbc without writing a single line of java code.
 * Currently the example just covers: `` kafka topic (avro) -> jdbc ``
 * In the future the example should be: `` kafka topic (xml) -> kafka topic (avro) -> jdbc `` (including an example with a dead letter queue).
 
