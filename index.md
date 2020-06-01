@@ -54,7 +54,7 @@ verify that your data has reached postgres by querying something long the lines:
 
 #### Considerations:
 
-* What if messages cannot be persisted due to some invalid property of the entity? <br></br>[Send it of to a error / dead letter queue](https://www.confluent.io/blog/kafka-connect-deep-dive-error-handling-dead-letter-queues/)
+* What if messages cannot be persisted due to some invalid property of the entity? <br>[Send it of to a error / dead letter queue](https://www.confluent.io/blog/kafka-connect-deep-dive-error-handling-dead-letter-queues/)
 
 
 #### Pros & Cons of using Kafka-Connect:
@@ -72,7 +72,7 @@ Cons:
 
 
 #### Cheat-Sheet:
-* check existing topics:<br></br>
+* check existing topics:<br>
 ``docker exec -it broker kafka-topics --list --zookeeper zookeeper:2181``
 
 
