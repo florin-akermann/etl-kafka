@@ -70,7 +70,7 @@ select * from test;
 Pros:
 * no code, only config -> no code maintenance
 * easy to setup
-* different clearly defined strategies for dead-letters & errors
+* different, clearly defined strategies for dead-letters & errors
 * tbc...
 
 Cons:
