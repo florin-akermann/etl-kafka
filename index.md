@@ -38,7 +38,7 @@ Insert some arbitrary values into the test stream, e.g:
 insert into test (testField) values ('someValue');
 ````
 
-[Optional]: fire up second ksqldb cli and observe new values being added to the stream by running:
+Optional: fire up second ksqldb cli and observe new values being added to the stream by running:
 ````
 select * from test emit changes;
 ````
