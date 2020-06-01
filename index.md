@@ -21,7 +21,8 @@ Fire up all needed services [zookeeper, broker, schema-registry, kafka-connect, 
 `docker-compose up`
 
 ## ksql-cli
-Ksql has been used fFire up ksql-cli by calling:
+Let's create a topic and add some data via ksql.
+Fire up the ksql-cli by calling:
 
 ``docker exec -it ksqldb-cli ksql http://ksqldb-server:8088``
 
